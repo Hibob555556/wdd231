@@ -1,0 +1,99 @@
+/* ************************* Colors ************************* */
+
+/* Style Guide */
+/* ----------------------------------- */
+/* Base: #F5F6FA      */
+/* Highlight: #00B8D9 */
+/* Secondary: #1f2A44 */
+/* Accent: #FF7F50    */
+/* ----------------------------------- */
+
+/* Variables */
+/* ----------------------------------- */
+:root {
+    --base-color-1: #F5F6FA;
+    --base-color-2: #2C3E50;
+    --highlight-color: #00B8D9;
+    --secondary-color: #1f2A44;
+    --accent-color: #FF7F50;
+}
+
+/* ----------------------------------- */
+
+/* ****************************************************** */
+
+/* *********************** General *********************** */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ******************************************************* */
+
+/* *********************** Header *********************** */
+/* Tag Rules */
+/* ----------------------------------- */
+header {
+    /* display contents in a 3 column 1 row grid */
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+
+    /* Align header contents */
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    align-items: center;
+
+    /* Color background to see text and img */
+    background-color: var(--base-color-1);
+
+    /* Sizing */
+    height: 45px;
+}
+
+/* home svg */
+header img {
+    /* display correctly */
+    display: block;
+
+    /* scale without warping */
+    width: 35px;
+    height: auto;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+/* site title */
+header span {
+    color: var(--secondary-color);
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: '\00D7';
+}
+
+/* ----------------------------------- */
+/* ****************************************************** */

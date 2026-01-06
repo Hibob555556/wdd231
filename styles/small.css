@@ -1,0 +1,23 @@
+@media only screen and (max-width: 24.375rem) {
+
+    /* Header */
+    /* ------------------------------ */
+    header span {
+        font-size: 1em;
+    }
+
+    /* ------------------------------ */
+
+}
+
+@media only screen and (max-width: 12.5rem) {
+
+    /* Header */
+    /* ------------------------------ */
+    header {
+        padding-bottom: 15px;
+    }
+
+    /* ------------------------------ */
+
+}
