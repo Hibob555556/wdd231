@@ -16,6 +16,8 @@
     --highlight-color: #00B8D9;
     --secondary-color: #1f2A44;
     --accent-color: #FF7F50;
+    --accent-color-opaque1: #FF7F5066;
+    --accent-color-opaque2: #FF7F501A;
 }
 
 /* ----------------------------------- */
@@ -49,7 +51,7 @@ header {
     background-color: var(--base-color-1);
 
     /* Sizing */
-    height: 45px;
+    height: 6vh;
 }
 
 /* home svg */
@@ -96,4 +98,102 @@ header span {
 }
 
 /* ----------------------------------- */
+/* ****************************************************** */
+
+/* ********************* Navigation ********************* */
+/* Tag Rules */
+/* ----------------------------------- */
+nav {
+    background-color: var(--base-color-2);
+    padding: 1rem 18px;
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.navigation {
+    margin-top: 5px;
+    display: none;
+    margin-bottom: 50px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    height: 6vh;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: larger;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.navigation li:hover {
+    transform: scale(1.02);
+    text-decoration: overline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    animation: breathe 3s ease-in-out infinite alternate;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+/* ----------------------------------- */
+/* ****************************************************** */
+
+/* *********************** Footer *********************** */
+/* Tag Rules */
+/* ----------------------------------- */
+footer {
+    background-color: var(--base-color-2);
+    padding: 1rem 18px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    border-radius: 7px;
+    border: 1px solid var(--accent-color-opaque2);
+}
+
+.social a:hover {
+    background-color: rgb(0 0 0 / 10%);
+    border: 1px solid var(--accent-color-opaque1);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+/* ----------------------------------- */
+
 /* ****************************************************** */
