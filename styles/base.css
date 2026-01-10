@@ -18,6 +18,7 @@
     --accent-color: #FF7F50;
     --accent-color-opaque1: #FF7F5066;
     --accent-color-opaque2: #FF7F501A;
+    --default-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%);
 }
 
 /* ----------------------------------- */
@@ -115,7 +116,6 @@ nav {
 .navigation {
     margin-top: 5px;
     display: none;
-    margin-bottom: 50px;
 }
 
 .navigation.show {
@@ -181,6 +181,7 @@ footer {
     align-items: center;
     width: 44px;
     border-radius: 7px;
+    padding: 5px 0;
     border: 1px solid var(--accent-color-opaque2);
 }
 
@@ -196,4 +197,83 @@ footer {
 
 /* ----------------------------------- */
 
+/* ****************************************************** */
+
+/* ********************** Content *********************** */
+/* Tag Rules */
+/* ----------------------------------- */
+section {
+    padding: 0 5px;
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.section-header {
+    padding-left: 5px;
+}
+
+.section-header h2 {
+    margin-top: 15px;
+}
+
+.entry {
+    padding: 0 5px;
+}
+
+.entry-header {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border-radius: 7px;
+    box-shadow: var(--default-shadow);
+}
+
+.entry-header h3 {
+    padding: 5px;
+}
+
+.entry-content {
+    padding: 0 5px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row button {
+    width: 28.5%;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.course-container {
+    align-self: center;
+    width: 85%;
+    padding: 6px;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    margin: 5px 0;
+    color: var(--accent-color);
+}
+
+img {
+    display: flex;
+    justify-self: center;
+    max-width: 90%;
+    border-radius: 7px;
+    border: solid 2px var(--accent-color-opaque2);
+}
+
+/* ----------------------------------- */
 /* ****************************************************** */

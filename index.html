@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Cayden Lunt | WDD231</title>
+    <meta name="description" content="Cayden Lunt, WDD231, BYU Pathway, Home Page">
+    <meta name="author" content="Cayden Lunt">
 
     <!-- Styles-->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- This should always go first -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Scripts -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +33,64 @@
         </ul>
     </nav>
 
-    <main></main>
+    <main>
+        <section>
+            <div class="section-header">
+                <h2>Home</h2>
+            </div>
+            <div class="section-body">
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="entry-content">
+                        Hey! My name is Cayden. For work I am a Product Test Engineer and Developer. I enjoy photography
+                        and seeing how far I can take dirt roads before they end in my Jeep. I enjoy writing code in C#
+                        and have been working on a program which automatically documents C# code into a markdown file
+                        when you commit your changes to a git repository. I do a lot of work with weather stations and
+                        renewable energy for work. I particularly enjoy working with any sort of solar sensor. I have
+                        built a solar tracker which can fit a full size solar panel from scratch. This has allowed me to
+                        greatly improve my testing capabilities at work by being able to directly point sensors at the
+                        sun which allows me to test for longer periods each day.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Student Photo</h3>
+                    </div>
+                    <div class="entry-content">
+                        <img src="images/caydenlunt.avif" alt="Photo of Cayden Lunt">
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Web Certificate Courses</h3>
+                    </div>
+                    <div class="entry-content">
+                        <div class="row">
+                            <button id="show-all" class="control-button">All</button>
+                            <button id="show-cse" class="control-button">CSE</button>
+                            <button id="show-wdd" class="control-button">WDD</button>
+                        </div>
+                        <div class="column">
+                            <div class="course-container">
+                                <span class="course">WDD 130</span>
+                            </div>
+                            <div class="course-container">
+                                <span class="course">WDD 131</span>
+                            </div>
+                            <div class="course-container">
+                                <span class="course">WDD 231</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="social">
@@ -37,8 +99,8 @@
             <a href="#" target="_blank"><img src="images/github.svg" alt="github link" width="16" height="16"></a>
             <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin link" width="16" height="16"></a>
         </div>
-        <p>&copy; 2026 | Cayden Lunt | Utah, United States</p>
-        <p>Last Modified</p>
+        <p>&copy; <span id="currentyear"></span> | Cayden Lunt | Utah, United States</p>
+        <p id="lastModified" class="lastModified">Last Modified</p>
     </footer>
 
     <script src="scripts/navigation.js"></script>
