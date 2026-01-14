@@ -4,10 +4,17 @@ const navbutton = document.querySelector('#ham-button');
 // store container elements for reference 
 const navBar = document.querySelector('#nav-bar');
 
-// toggle show class
+// toggle show class + accessibility state
 navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle("show");
-    navBar.classList.toggle('show');
+    const isOpen = navBar.classList.toggle('show');
+    navbutton.classList.toggle('show', isOpen);
+
+    // keep ARIA accurate
+    navbutton.setAttribute('aria-expanded', String(isOpen));
+    navbutton.setAttribute(
+        'aria-label',
+        isOpen ? 'Close navigation menu' : 'Open navigation menu'
+    );
 });
 
 const navList = document.querySelector('#nav-bar ul');
