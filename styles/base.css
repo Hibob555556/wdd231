@@ -231,6 +231,10 @@ section {
     margin-top: 15px;
 }
 
+h2 {
+    padding: 5px;
+}
+
 .section-body {
     width: 100%;
 }
