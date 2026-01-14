@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -76,4 +76,40 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+const courseList = document.querySelector('#prog_course_container');
+
+function displayCourses(courseArray) {
+    courseList.innerHTML = '';
+
+    courseArray.forEach(course => {
+        const course_container = document.createElement('li');
+        course_container.classList.add('course', 'course-container');
+        course_container.textContent = `${course.subject} ${course.number} - ${course.title}`;
+
+        if (course.completed) course_container.classList.add('completed');
+        else course_container.classList.add('incomplete');
+
+        courseList.appendChild(course_container);
+
+        const totalCredits = courseArray.reduce((sum, course) => sum + course.credits, 0);
+        document.querySelector('#credits').textContent = `Total Credits: ${totalCredits}`;
+    });
+}
+
+displayCourses(courses);
+
+const show_all_button = document.querySelector('#show-all');
+const show_wdd_button = document.querySelector('#show-wdd');
+const show_cse_button = document.querySelector('#show-cse');
+
+show_all_button.addEventListener('click', () => { displayCourses(courses); });
+show_wdd_button.addEventListener('click', () => {
+    const wdd = courses.filter(course => course.subject === 'WDD');
+    displayCourses(wdd);
+});
+show_cse_button.addEventListener('click', () => {
+    const cse = courses.filter(course => course.subject === 'CSE');
+    displayCourses(cse);
+});

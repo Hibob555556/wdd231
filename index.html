@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/small.css">
 
     <!-- Scripts -->
+    <script src="scripts/index.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -74,18 +75,12 @@
                             <button id="show-cse" class="control-button">CSE</button>
                             <button id="show-wdd" class="control-button">WDD</button>
                         </div>
-                        <div class="column">
-                            <div class="course-container">
-                                <span class="course">WDD 130</span>
-                            </div>
-                            <div class="course-container">
-                                <span class="course">WDD 131</span>
-                            </div>
-                            <div class="course-container">
-                                <span class="course">WDD 231</span>
-                            </div>
-
-                        </div>
+                        <ul class="column" id="prog_course_container"></ul>
+                    </div>
+                    <div class="key">
+                        <div id="credits">Total Credits: 0</div>
+                        <span class="green">✓</span> → Complete. <br> <span class="red">✗</span> →
+                        Incomplete.
                     </div>
                 </div>
             </div>

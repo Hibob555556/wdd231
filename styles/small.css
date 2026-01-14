@@ -31,11 +31,11 @@
     .navigation ul {
         flex-direction: column;
         padding-left: 0;
+        font-size: larger;
     }
 
-    .navigation li {
+    .navigation li:not(:first-child) {
         padding-top: 20px;
-        font-size: larger;
     }
 }
 

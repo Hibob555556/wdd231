@@ -4,7 +4,7 @@
 /* ----------------------------------- */
 /* Base: #F5F6FA      */
 /* Highlight: #00B8D9 */
-/* Secondary: #1f2A44 */
+/* Secondary: #181E2F */
 /* Accent: #FF7F50    */
 /* ----------------------------------- */
 
@@ -12,10 +12,10 @@
 /* ----------------------------------- */
 :root {
     --base-color-1: #F5F6FA;
-    --base-color-2: #2C3E50;
+    --base-color-2: #22323F;
     --highlight-color: #00B8D9;
-    --secondary-color: #1f2A44;
-    --accent-color: #FF7F50;
+    --secondary-color: #181E2F;
+    --accent-color: #FF662E;
     --accent-color-opaque1: #FF7F5066;
     --accent-color-opaque2: #FF7F501A;
     --default-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%);
@@ -30,6 +30,19 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont,
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
         'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 /* ******************************************************* */
@@ -203,7 +216,8 @@ footer {
 /* Tag Rules */
 /* ----------------------------------- */
 section {
-    padding: 0 5px;
+    padding: 5px;
+    justify-items: center;
 }
 
 /* ----------------------------------- */
@@ -245,7 +259,7 @@ section {
 }
 
 .row button {
-    width: 28.5%;
+    width: 28%;
 }
 
 .column {
@@ -257,14 +271,58 @@ section {
     margin: 12px 0;
 }
 
+#prog_course_container {
+    padding-left: 0;
+    /* remove the default left padding */
+    padding-right: 0;
+    /* optional, just to be safe */
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    /* remove bullets */
+}
+
+.key {
+    background-color: var(--secondary-color);
+    color: var(--base-color-1);
+    text-align: center;
+    width: 45%;
+    padding: 5px 0 5px 0;
+    border-radius: 7px;
+    justify-self: center;
+}
+
 .course-container {
     align-self: center;
-    width: 85%;
+    max-width: 85%;
+    width: 100%;
     padding: 6px;
     background-color: var(--secondary-color);
     border-radius: 7px;
-    margin: 5px 0;
+    margin: 5px auto;
     color: var(--accent-color);
+    list-style: none;
+}
+
+.course.completed::after {
+    content: " ✓";
+    color: #3f3;
+    font-weight: bold;
+}
+
+.course.incomplete::after {
+    content: " ✗";
+    color: #f33;
+    font-weight: bold;
+}
+
+.green {
+    color: #3f3;
+}
+
+.red {
+    color: #f33;
 }
 
 img {
