@@ -1,0 +1,272 @@
+/* ************************* Colors ************************* */
+
+/* Style Guide */
+/* ----------------------------------- */
+/* Base: #F5F6FA      */
+/* Highlight: #00B8D9 */
+/* Secondary: #181E2F */
+/* Accent: #FF7F50    */
+/* ----------------------------------- */
+
+/* Variables */
+/* ----------------------------------- */
+:root {
+    --base-color-1: #F5F6FA;
+    --base-color-2: #22323F;
+    --highlight-color: #00B8D9;
+    --secondary-color: #181E2F;
+    --accent-color: #FF662E;
+    --accent-color-opaque1: #FF7F5066;
+    --accent-color-opaque2: #FF7F501A;
+    --default-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%);
+}
+
+/* ----------------------------------- */
+
+/* ****************************************************** */
+
+/* *********************** General *********************** */
+* {
+    font-family: Roboto, Momo Trust Sans, Duru Sans, Raleway;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* ******************************************************* */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+/* *********************** Header *********************** */
+/* Tag Rules */
+/* ----------------------------------- */
+header {
+    /* display contents in a 3 column 1 row grid */
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+
+    /* Align header contents */
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    align-items: center;
+    margin-top: 5px;
+
+    /* Color background to see text and img */
+    background-color: var(--base-color-1);
+
+    /* Sizing */
+    height: 6vh;
+    min-height: max-content;
+}
+
+header h1 {
+    margin-top: 12px;
+}
+
+/* home svg */
+header img {
+    display: block;
+
+    /* scale without warping */
+    width: 150px;
+    height: auto;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+/* site title */
+header span {
+    color: var(--secondary-color);
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: '\00D7';
+}
+
+.nav-button::after {
+    content: "≡";
+}
+
+/* ----------------------------------- */
+/* ****************************************************** */
+
+/* ********************* Navigation ********************* */
+/* Tag Rules */
+/* ----------------------------------- */
+nav {
+    background-color: var(--base-color-2);
+    padding: 1rem 18px;
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.navigation {
+    margin-top: 5px;
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: larger;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.navigation li:hover {
+    transform: scale(1.02);
+    text-decoration: overline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    animation: breathe 3s ease-in-out infinite alternate;
+}
+
+.navigation li.active a {
+    text-decoration: overline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+}
+
+.navigation li.active {
+    animation: breathe 3s ease-in-out infinite alternate;
+}
+
+/* ----------------------------------- */
+/* ****************************************************** */
+
+/* *********************** Footer *********************** */
+/* Tag Rules */
+/* ----------------------------------- */
+footer {
+    background-color: var(--base-color-2);
+    padding: 1rem 18px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* ----------------------------------- */
+
+/* Class Rules */
+/* ----------------------------------- */
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    border-radius: 7px;
+    padding: 5px 0;
+    border: 1px solid var(--accent-color-opaque2);
+}
+
+.social a:hover {
+    background-color: rgb(0 0 0 / 10%);
+    border: 1px solid var(--accent-color-opaque1);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+/* ----------------------------------- */
+
+/* ****************************************************** */
+
+/* ************************* Body *************************** */
+/* Tag Styles */
+/* ----------------------------------- */
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------- */
+
+/* Class Styles */
+/* ----------------------------------- */
+.list {
+    max-width: 50%;
+    justify-self: center;
+}
+
+/* ----------------------------------- */
+
+/* ********************************************************** */
+
+/* Animations */
+/* ------------------------------ */
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ------------------------------ */

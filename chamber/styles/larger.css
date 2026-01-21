@@ -1,0 +1,59 @@
+@media only screen and (min-width: 38rem) {
+
+    /* General */
+    /* ------------------------------ */
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    /* ------------------------------ */
+
+    /* Header */
+    /* ------------------------------ */
+    header {
+        grid-template-columns: .5fr auto .5fr;
+        justify-self: center;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    header h1 {
+        justify-self: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* ------------------------------ */
+
+    /* Navigation */
+    /* ------------------------------ */
+    .navigation {
+        display: block;
+    }
+
+
+    /* Body */
+    /* ------------------------------ */
+    section {
+        text-align: center;
+    }
+
+    section:not(:last-child) {
+        border-bottom: 1px black solid;
+    }
+
+    section img {
+        max-width: 250px;
+    }
+
+    /* ------------------------------ */
+}

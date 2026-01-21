@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Cache Your Checks Inc.",
+            "address": "123 Main Street, Logan, Utah",
+            "phone": "(435) 555-1000",
+            "website": "https://www.cacheyourcheckslogan.com",
+            "image": "cache-checks-logo.png",
+            "membership": 2,
+            "description": "Cache Valley's premier check cashing business. Stop in to \"Cache\" your checks. Est. 1987.",
+            "alt": "Cache Your Checks Inc. Logo"
+        },
+        {
+            "name": "Bear River Outfitters",
+            "address": "321 Main Street, Logan, Utah",
+            "phone": "(435) 555-0101",
+            "website": "https://www.outfitbearriver.com",
+            "image": "bear-river-outfitters-logo.png",
+            "membership": 3,
+            "description": "Cache Valley's premier outfitter. Stop in for help ensuring you get best quality equipment for your next trip. Est. 1998.",
+            "alt": "Bear River Outfitters Logo"
+        },
+        {
+            "name": "Cache Valley Tech Solutions",
+            "address": "555 Main Street, Logan, Utah",
+            "phone": "(435) 555-0102",
+            "website": "https://www.cachevallytech.com",
+            "image": "cache-tech-logo.png",
+            "membership": 3,
+            "description": "Cache Valley's premier Information Technology company. Stop in for help ensuring your business has the best technology available. Est. 2006.",
+            "alt": "Cache Valley Tech Solutions Logo"
+        },
+        {
+            "name": "Logan Creek Café",
+            "address": "42 Main Street, Logan, Utah",
+            "phone": "(435) 555-0103",
+            "website": "https://www.logancreekcafe.com",
+            "image": "logan-creek-cafe-logo.png",
+            "membership": 1,
+            "description": "Cache Valley's most delicious cafe. Stop in for a peaceful all organic meal by the river. Est. 2018.",
+            "alt": "Logan Creek Cafe Logo"
+        },
+        {
+            "name": "Wasatch Front Home Services",
+            "address": "17 Main Street, Logan, Utah",
+            "phone": "(435) 555-0104",
+            "website": "https://www.wfronthomeservices.com",
+            "image": "wf-home-services-logo.png",
+            "membership": 3,
+            "description": "Utah's most prestigious home services company. Stop in for a consult, walk-in's welcome. Est. 2012.",
+            "alt": "Wasatch Front Home Services Logo"
+        },
+        {
+            "name": "Redstone Ridge Realty",
+            "address": "999 Main Street, Logan, Utah",
+            "phone": "(435) 555-0105",
+            "website": "https://www.redstoneridgerealty.com",
+            "image": "rr-realty-logo.png",
+            "membership": 1,
+            "description": "Utah's go-to luxury realty company. Stop in to consult with our Luxury Engineers to find the perfect fit for you. Est. 1972.",
+            "alt": "Redstone Ridge Realty Logo"
+        },
+        {
+            "name": "Summit Valley Physical Therapy",
+            "address": "212 Main Street, Logan, Utah",
+            "phone": "(435) 555-0106",
+            "website": "https://www.summitvalphysicaltherapy.com",
+            "image": "sv-physical-therapy-logo.png",
+            "membership": 2,
+            "description": "Cache Valley's most high tech physical therapy office. Consult with your doctor for a referral . Est. 2022.",
+            "alt": "Summit Valley Physical Therapy Logo"
+        }
+    ]
+}
