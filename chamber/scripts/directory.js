@@ -16,12 +16,12 @@ function createLink(link) {
     a.setAttribute("href", link);
     a.setAttribute("target", "_blank");
     a.setAttribute("rel", "noopener")
-    a.textContent = "Site";
+    a.textContent = link;
     container.append(a);
     return container;
 }
 function recordMembership(level) {
-    let label = document.createElement("p");
+    let label = document.createElement("div");
     let text = "";
     switch (level) {
         case 1:
@@ -34,6 +34,7 @@ function recordMembership(level) {
             text = "Gold";
             break;
     }
+    label.classList.add("member-level")
     label.textContent = `Member Level: ${text}`;
     return label;
 }
@@ -54,12 +55,13 @@ function createCard(memberInfo) {
     const siteImageEntry = createImage(image, memberInfo.alt);
     const membershipEntry = recordMembership(membership);
 
-    const entries = [nameEntry, addressEntry, numberEntry, siteEntry, siteImageEntry, membershipEntry];
-    const values = [name, address, number, site];
+    const entries = [nameEntry, addressEntry, numberEntry, membershipEntry, siteEntry, siteImageEntry];
+    const values = [name, address, number, null, site];
 
     let i = 0;
+    let excludes = [3, 4];
     for (let entry of entries) {
-        if (i < entries.length - 3)
+        if (!excludes.includes(i))
             setDivText(entry, values[i]);
         card.append(entry);
         i++;
