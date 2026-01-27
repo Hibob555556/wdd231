@@ -40,7 +40,7 @@ function displayResults(weatherData) {
     // elements 
     const CURRENT_TEMP_OUT = document.querySelector('#current-temp');
     const WEATHER_ICON_OUT = document.querySelector('#weather-icon');
-    const WEATHER_CAPTION = document.querySelector('#weather-conds');
+    const WEATHER_CAPTION = document.querySelector('figcaption');
 
     // data 
     const ICON_ID = weatherData['weather'][0]['icon'];
