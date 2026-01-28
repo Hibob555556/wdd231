@@ -249,6 +249,10 @@ section div {
 
 /* Class Styles */
 /* ----------------------------------- */
+.page-heading {
+    text-align: center;
+}
+
 .list {
     justify-self: center;
 }
