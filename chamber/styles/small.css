@@ -253,6 +253,46 @@ section div {
     text-align: center;
 }
 
+.relative {
+    position: relative;
+}
+
+.hero-image picture {
+    margin-top: 150px;
+}
+
+.fnt-med {
+    font-size: xx-large;
+}
+
+.white {
+    color: #FFF;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.max-900 {
+    max-width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 30px;
+    left: 14px;
+}
+
+.centered-table {
+    text-align: center;
+    justify-self: center;
+}
+
+.centered-table th {
+    width: 33.3%;
+    text-decoration: underline;
+}
+
 .list {
     justify-self: center;
 }

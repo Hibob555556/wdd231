@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -15,11 +15,10 @@
 
     <!-- OG Meta -->
     <meta property="fb:app_id" content="966242223397117">
-    <meta property="og:title" content="Logan, Utah Chamber of Commerce | Directory">
-    <meta property="og:description"
-        content="Home page of Logan Utah Chamber of Commerce. Explore local business and find out local information.">
+    <meta property="og:title" content="Logan, Utah Chamber of Commerce">
+    <meta property="og:description" content="Explore local businesses and chamber members directory in Logan, Utah.">
     <meta property="og:image" content="https://hibob555556.github.io/wdd231/chamber/images/meta-preview-image.jpg">
-    <meta property="og:url" content="https://hibob555556.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://hibob555556.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <!-- CSS & Styles -->
@@ -33,6 +32,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Momo+Trust+Sans:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -45,11 +46,11 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
             <li class="active">
-                <a href="directory.html" aria-current="page">Directory</a>
+                <a href="index.html" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
             </li>
             <li>
                 <a href="discover.html">Discover</a>
@@ -61,9 +62,51 @@
     </nav>
 
     <main>
-        <div class="page-heading">
-            <h2>Logan Utah, Chamber of Commerce Homepage</h2>
+        <div class="hero-img relative">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/logan-hero-image-reg.avif" class="max-900 mt-25">
+                <source media="(min-width: 465px)" srcset="images/logan-hero-image-med.avif" class="max-900 mt-25">
+                <img src="images/logan-hero-image-sml.jpg" alt="Hero image of logan" class="max-900 mt-25">
+            </picture>
+            <a class="absolute white fnt-med" href="join.html">Join the Chamber</a>
         </div>
+
+        <section>
+            <h2>Current Events</h2>
+            <div class="events">
+                <table class="centered-table">
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Description</th>
+                            <th>Event Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Valentines Couples Dance
+                            </td>
+                            <td>
+                                Make sure you have a great valentines day by attending this awesome valentines themed
+                                dance.
+                            </td>
+                            <td>
+                                2/14/2026 8:30 PM
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Weather</h2>
+            <span id="current-temp"></span>
+            <span id="weather-desc"></span>
+            <img src="" alt="weather icon" id="weather-icon">
+            <div id="multi-day-forecast"></div>
+        </section>
     </main>
 
     <footer>
