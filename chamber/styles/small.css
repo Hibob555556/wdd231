@@ -370,6 +370,22 @@ section div {
     grid-template-columns: 1fr;
 }
 
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather img {
+    height: 77px;
+    width: 77px;
+    filter: drop-shadow(2px 2px 3px #0d0d0d9f);
+}
+
+section img {
+    max-height: 175px;
+}
+
 /* ----------------------------------- */
 
 /* ********************************************************** */
