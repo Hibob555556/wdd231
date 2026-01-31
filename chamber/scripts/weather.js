@@ -2,10 +2,16 @@ const CURRENT_TEMP_OUT = document.querySelector('#current-temp');
 const WEATHER_ICON_OUT = document.querySelector('#weather-icon');
 const WEATHER_CAPTION = document.querySelector('#weather-desc');
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?";
+<<<<<<< HEAD
 const FORECAST_BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?";
 const UNITS = "imperial";
 const LAT = 41.73;
 const LON = -111.83;
+=======
+const UNITS = "imperial";
+const LAT = 41.73
+const LON = -111.83
+>>>>>>> e865979240edc8b4d364b83726d9a4bf579fd39e
 
 // NOTE: 
 // This API key is intentionally exposed because this project 
@@ -18,6 +24,7 @@ const PARAMS = ["lat", "lon", "units", "APPID"];
 const PARAM_VALUES = [LAT, LON, UNITS, API_KEY];
 
 let url = BASE_URL;
+<<<<<<< HEAD
 let forecast_url = FORECAST_BASE_URL;
 let i = 0;
 PARAMS.forEach(param => {
@@ -34,11 +41,25 @@ apiFetch(url);
 apiFetch(forecast_url, true);
 
 async function apiFetch(url, forecast = false) {
+=======
+let i = 0;
+PARAMS.forEach(param => {
+    if (i < PARAM_VALUES.length - 1)
+        url += `${param}=${PARAM_VALUES[i]}&`
+    else
+        url += `${param}=${PARAM_VALUES[i]}`
+    i++;
+});
+apiFetch(url);
+
+async function apiFetch(url) {
+>>>>>>> e865979240edc8b4d364b83726d9a4bf579fd39e
     try {
         let response = await fetch(url);
         if (!response.ok)
             throw new Error("Failed to fetch endpoint");
         let data = await response.json();
+<<<<<<< HEAD
         if (forecast)
             displayForecast(data);
         else
@@ -46,6 +67,11 @@ async function apiFetch(url, forecast = false) {
     } catch (err) {
         WEATHER_CAPTION.textContent = "Weather unavailable";
         console.error(err)
+=======
+        displayResults(data);
+    } catch (err) {
+        WEATHER_CAPTION.textContent = "Weather unavailable";
+>>>>>>> e865979240edc8b4d364b83726d9a4bf579fd39e
         return 0;
     }
 }
@@ -62,6 +88,7 @@ function displayResults(weatherData) {
     WEATHER_ICON_OUT.setAttribute('src', ICON_URL);
     WEATHER_ICON_OUT.setAttribute('alt', WEATHER_DESC);
     WEATHER_CAPTION.textContent = WEATHER_DESC;
+<<<<<<< HEAD
 }
 
 function displayForecast(forecastData) {
@@ -133,3 +160,6 @@ function displayForecast(forecastData) {
         temp_container.innerHTML = `${day_of_week}: <b>${Math.round(day.high)} °F</b>`;
     }
 }
+=======
+}
+>>>>>>> e865979240edc8b4d364b83726d9a4bf579fd39e
