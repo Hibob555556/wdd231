@@ -291,14 +291,11 @@ h2 {
 
 #prog_course_container {
     padding-left: 0;
-    /* remove the default left padding */
     padding-right: 0;
-    /* optional, just to be safe */
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: none;
-    /* remove bullets */
 }
 
 .key {

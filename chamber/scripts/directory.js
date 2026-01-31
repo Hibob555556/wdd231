@@ -10,6 +10,7 @@ function createImage(path, alt) {
     img.setAttribute("alt", alt);
     return img;
 }
+
 function createLink(link) {
     const container = document.createElement("div");
     const a = document.createElement("a");
@@ -20,6 +21,7 @@ function createLink(link) {
     container.append(a);
     return container;
 }
+
 function recordMembership(level) {
     let label = document.createElement("div");
     let text = "";

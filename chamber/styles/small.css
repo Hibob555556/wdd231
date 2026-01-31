@@ -18,7 +18,7 @@
     --accent-color: #FF662E;
     --accent-color-opaque1: #FF7F5066;
     --accent-color-opaque2: #FF7F501A;
-    --default-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%);
+    --default-shadow: 0px 0px 5px 1px rgb(0 0 0 / 20%);
 }
 
 /* ----------------------------------- */
@@ -35,6 +35,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+}
+
+main,
+nav,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 18px;
+    text-align: center;
 }
 
 *,
@@ -236,9 +251,11 @@ footer {
 /* ************************* Body *************************** */
 /* Tag Styles */
 /* ----------------------------------- */
-section {
+section:not(#spotlight-section) {
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
+    box-shadow: var(--default-shadow);
 }
 
 section div {
@@ -249,6 +266,50 @@ section div {
 
 /* Class Styles */
 /* ----------------------------------- */
+.page-heading {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.hero-image picture {
+    margin-top: 150px;
+}
+
+.fnt-med {
+    font-size: xx-large;
+}
+
+.white {
+    color: #FFF;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.max-900 {
+    max-width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 30px;
+    left: 14px;
+}
+
+.centered-table {
+    text-align: center;
+    justify-self: center;
+}
+
+.centered-table th {
+    width: 33.3%;
+    text-decoration: underline;
+}
+
 .list {
     justify-self: center;
 }
@@ -297,6 +358,16 @@ section div {
 
 .controls img:hover {
     transform: scale(1.1);
+}
+
+.grid {
+    display: grid;
+}
+
+#city-info {
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 /* ----------------------------------- */
