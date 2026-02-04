@@ -49,5 +49,89 @@
         gap: 10px;
     }
 
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        grid-row: 1 / 5;
+        margin-bottom: 30%;
+    }
+
+    .form-container label {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .form-container input:not([type="radio"]) {
+        width: 355px;
+        max-width: 375px;
+    }
+
+    .form-container fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        border: 1px #4d4d4da4 solid;
+        border-radius: 7px;
+    }
+
+    .form-container fieldset legend {
+        margin-left: 15px;
+    }
+
+    .form-container fieldset label {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+    }
+
+    .form-container fieldset label input {
+        margin-right: 10px;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 0.75fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        background-color: var(--secondary-color);
+        color: var(--accent-color);
+        max-width: 400px;
+        width: 75%;
+        height: 80%;
+        border-end-end-radius: 7px;
+        border-start-start-radius: 7px;
+        padding-bottom: 7px;
+    }
+
+    dialog {
+        max-width: 500px;
+    }
+
+    .modal_close {
+        cursor: pointer;
+    }
+
+    .show_info_button {
+        cursor: pointer;
+        width: 44%;
+        background-color: var(--accent-color-opaque1);
+        color: white;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
     /* ------------------------------ */
 }

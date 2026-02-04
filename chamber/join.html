@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan, Utah Join Chamber of Commerce</title>
+
+    <!-- Page Meta -->
+    <meta name="description" content="Explore local businesses by joining the Chamber directory.">
+    <meta name="author" content="Cayden Lunt">
+
+    <!-- Icons/Fav -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- OG Meta -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="Logan, Utah Join Chamber of Commerce">
+    <meta property="og:description" content="Explore local businesses by joining the Chamber directory.">
+    <meta property="og:image" content="https://hibob555556.github.io/wdd231/chamber/images/meta-preview-image.jpg">
+    <meta property="og:url" content="https://hibob555556.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS & Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Momo+Trust+Sans:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logan, Utah Chamber of Commerce logo">
+        <h1>Logan, Utah Join Chamber of Commerce</h1>
+        <button id="ham-button" class="hamburger" aria-label="Open navigation menu" aria-controls="nav-bar"
+            aria-expanded="false"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li class="active">
+                <a href="join.html" aria-current="page">Join</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Join the Chamber</h2>
+        <div class="center grid-layout">
+            <form method="get" action="thankyou.html" class="form-container">
+                <label>
+                    First Name
+                    <input type="text" required name="first_name" title="First Name" autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" required name="last_name" title="Last Name" autocomplete="family-name">
+                </label>
+                <label>
+                    Organizational Title
+                    <input type="text" name="organizational_title" title="Organizational Title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                </label>
+                <label>
+                    Email Address
+                    <input type="email" required name="email_address" title="Email Address" autocomplete="email"
+                        placeholder="example@loganchamber.com">
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" required name="phone_number" title="Phone Number" autocomplete="tel">
+                </label>
+                <label>
+                    Organization name
+                    <input type="text" required name="organization_name" title="Organization Name"
+                        autocomplete="organization">
+                </label>
+                <fieldset>
+                    <legend>
+                        Member Level
+                    </legend>
+                    <label>
+                        <input type="radio" required name="level" title="Membership Level" value="np">
+                        NP Membership
+                    </label>
+                    <label>
+                        <input type="radio" required name="level" title="Membership Level" value="bronze">
+                        Bronze Membership
+                    </label>
+                    <label>
+                        <input type="radio" required name="level" title="Membership Level" value="silver">
+                        Silver Membership
+                    </label>
+                    <label>
+                        <input type="radio" required name="level" title="Membership Level" value="gold">
+                        Gold Membership
+                    </label>
+                </fieldset>
+                <label>
+                    Organization Description
+                    <textarea name="organization_description" title="Organization Description"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join">
+            </form>
+
+            <div class="card-container fade" id="np_level_card">
+                <div class="card">
+                    <h3>Non-Profit</h3>
+                    <button class="show_info_button" id="show_np_level">More Info</button>
+                </div>
+            </div>
+            <div class="card-container fade" id="bronze_level_card">
+                <div class="card">
+                    <h3>Bronze</h3>
+                    <button class="show_info_button" id="show_bronze_level">More Info</button>
+                </div>
+            </div>
+            <div class="card-container fade" id="silver_level_card">
+                <div class="card">
+                    <h3>Silver</h3>
+                    <button class="show_info_button" id="show_silver_level">More Info</button>
+                </div>
+            </div>
+            <div class="card-container fade" id="gold_level_card">
+                <div class="card">
+                    <h3>Gold</h3>
+                    <button class="show_info_button" id="show_gold_level">More Info</button>
+                </div>
+            </div>
+
+            <dialog class="member_level" id="member_level_np">
+                <h3>Non-Profit Membership</h3>
+                <p>The Non-Profit Membership is designed for charitable and service-based organizations that contribute
+                    to
+                    community well-being. Members at this level gain access to chamber resources, networking
+                    opportunities,
+                    and visibility to help further their mission while building partnerships with local businesses and
+                    leaders.</p>
+                <button class="modal_close" id="close_np">❌</button>
+            </dialog>
+            <dialog class="member_level" id="member_level_bronze">
+                <h3>Bronze Membership</h3>
+                <p>The Bronze Membership is an excellent entry point for businesses wanting to connect with the local
+                    business community. Members gain access to networking opportunities, chamber communications, and
+                    resources developed to support business recognition and interaction within the region.</p>
+                <button class="modal_close" id="close_bronze">❌</button>
+            </dialog>
+            <dialog class="member_level" id="member_level_silver">
+                <h3>Silver Membership</h3>
+                <p>Silver Members receive enhanced visibility and greater access to chamber programs and events. This
+                    level
+                    supports business growth through expanded networking, promotional opportunities, and participation
+                    in
+                    initiatives that strengthen the local economy.</p>
+                <button class="modal_close" id="close_silver">❌</button>
+            </dialog>
+            <dialog class="member_level" id="member_level_gold">
+                <h3>Gold Membership</h3>
+                <p>Gold Membership provides premium access and esteem within the Chamber of Commerce. Members at this
+                    level
+                    play a leadership role in shaping the business environment by supporting advocacy efforts, economic
+                    development initiatives, and community partnerships. Gold Members are recognized as major
+                    contributors
+                    toward the success and vitality of the local business community.</p>
+                <button class="modal_close" id="close_gold">❌</button>
+            </dialog>
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="contact" class="footer-info">Logan, Utah Chamber of Commerce</p>
+        <p id="course_name" class="footer-info">WDD 231</p>
+        <p>&copy; <span id="currentyear"></span> | Cayden Lunt | Utah, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>

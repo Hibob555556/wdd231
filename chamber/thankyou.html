@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Logan Chamber of Commerce</title>
+
+    <!-- Page Meta -->
+    <meta name="description" content="Explore local businesses by joining the Chamber directory.">
+    <meta name="author" content="Cayden Lunt">
+
+    <!-- Icons/Fav -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- OG Meta -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="Thank You | Logan Chamber of Commerce">
+    <meta property="og:description" content="Explore local businesses by joining the Chamber directory.">
+    <meta property="og:image" content="https://hibob555556.github.io/wdd231/chamber/images/meta-preview-image.jpg">
+    <meta property="og:url" content="https://hibob555556.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS & Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Momo+Trust+Sans:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logan, Utah Chamber of Commerce logo">
+        <h1>Thank You | Logan Chamber of Commerce</h1>
+        <button id="ham-button" class="hamburger" aria-label="Open navigation menu" aria-controls="nav-bar"
+            aria-expanded="false"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <ul class="styleless-list thankyou">
+            <li class="space">
+                <span>Thank you, </span>
+                <span id="f_name"></span>
+                <span id="l_name"></span>
+            </li>
+            <li class="space">
+                <span>Email: </span>
+                <span id="email"></span>
+            </li>
+            <li class="space">
+                <span>Phone Number: </span>
+                <span id="number"></span>
+            </li>
+            <li class="space">
+                <span>Organization: </span>
+                <span id="org_name"></span>
+            </li>
+            <li class="space">
+                <span>Time Submitted: </span>
+                <span id="timestamp"></span>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p id="contact" class="footer-info">Logan, Utah Chamber of Commerce</p>
+        <p id="course_name" class="footer-info">WDD 231</p>
+        <p>&copy; <span id="currentyear"></span> | Cayden Lunt | Utah, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>
