@@ -177,7 +177,6 @@ nav {
 
 .navigation a {
     text-decoration: none;
-    color: var(--secondary-color);
     font-size: larger;
     font-weight: 600;
     color: var(--accent-color);
@@ -381,7 +380,6 @@ section img {
 .form-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30%;
     justify-content: center;
     margin-bottom: 15%;
 }
