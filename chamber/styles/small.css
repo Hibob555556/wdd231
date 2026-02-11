@@ -318,10 +318,6 @@ section div {
     display: none;
 }
 
-.styleless-list {
-    list-style-type: none;
-}
-
 .list img {
     display: none;
 }
@@ -358,10 +354,6 @@ section div {
 
 .controls img:hover {
     transform: scale(1.1);
-}
-
-.grid {
-    display: grid;
 }
 
 #city-info {
