@@ -537,3 +537,68 @@ input {
 }
 
 /* ------------------------------ */
+
+/* Discover Page */
+
+/* ************************** Discover ************************** */
+/* Discover Cards */
+/* ----------------------------------- */
+#discover {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+#discover .discover-card {
+    min-width: 0;
+}
+
+#discover img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+/* ----------------------------------- */
+/* ********************************************************** */

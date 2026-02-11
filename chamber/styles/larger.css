@@ -135,3 +135,45 @@
 
     /* ------------------------------ */
 }
+
+@media only screen and (min-width: 40.063rem) {
+    #discover {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    #discover {
+        width: 100%;
+        max-width: 900px;
+        justify-self: center;
+        justify-items: stretch;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: initial;
+        padding: 0 18px;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
+
+    #discover .discover-card {
+        width: 100%;
+        max-width: none;
+        justify-self: stretch;
+    }
+
+    #discover>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
