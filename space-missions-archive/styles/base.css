@@ -14,6 +14,8 @@
     --default-font: quicksand;
 }
 
+/* Defaults */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 *,
 *::before,
 *::after {
@@ -36,12 +38,21 @@ footer {
     padding: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+section {
+    border-radius: 7.5px;
+    border: 1px solid rgb(0 0 0 / 15%);
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
 }
 
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+
+/* Color Scheme */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 .color-preview {
     width: 20px;
     height: 10px;
@@ -82,17 +93,6 @@ img {
     color: var(--accent-color);
 }
 
-section {
-    border-radius: 7.5px;
-    border: 1px solid rgb(0 0 0 / 15%);
-    margin: 15px;
-    padding: 15px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1fr;
-}
-
 .color-entry {
     border-radius: 7.5px;
     border: 1px solid rgb(0 0 0 / 15%);
@@ -106,6 +106,8 @@ section {
     margin: 0;
     padding: 1px 10px;
 }
+
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 
 main {
     display: flex;
@@ -159,6 +161,27 @@ header h1 {
     overflow-wrap: anywhere;
 }
 
+
+/* Navigation */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+nav a {
+    text-decoration: none;
+    color: var(--foreground-2);
+}
+
+nav a.selected {
+    text-decoration: overline;
+}
+
+nav li.selected {
+    animation: breathe 3s ease-in-out infinite alternate;
+}
+
+nav li:hover {
+    text-decoration: overline;
+    animation: breathe 3s ease-in-out infinite alternate;
+}
+
 nav {
     grid-area: nav;
 }
@@ -173,8 +196,24 @@ nav ul {
     margin: 0;
 }
 
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+
+
+/* Hamburger */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 .hamburger {
     grid-area: burger;
+}
+
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+
+
+/* Wireframe */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .wireframe-img {
@@ -206,6 +245,11 @@ nav ul {
     grid-row-end: 2;
 }
 
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+
+
+/* Footer Styles */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -225,3 +269,24 @@ footer p {
 .socials {
     text-align: right;
 }
+
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+
+
+/* Animations */
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
