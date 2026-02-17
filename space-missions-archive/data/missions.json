@@ -1,0 +1,228 @@
+{
+    "missions": {
+        "isro": {
+            "Chandrayaan-1": {
+                "image": "images/missions/chandrayaan-1.webp",
+                "purpose": "To explore the Moon's surface composition and map minerals in detail.",
+                "launch": "October 22, 2008",
+                "arrival": "November 8, 2008",
+                "landing": "November 14, 2008",
+                "end": "August 29, 2009",
+                "description": "Chandrayaan-1 was India's first mission to the Moon and marked ISRO's entry into deep-space exploration. Launched aboard a PSLV rocket, the spacecraft orbited the Moon and carried 11 scientific instruments from India and international partners, including NASA and ESA. Its most significant discovery was evidence of water molecules on the Moon's surface which was a breakthrough that reshaped global lunar science.",
+                "destination": "Moon (Lunar orbit)"
+            },
+            "Mars Orbiter Mission (Mangalyaan)": {
+                "image": "images/missions/mangalyaan.webp",
+                "purpose": "To demonstrate India's interplanetary mission capability and study the Martian atmosphere and surface features.",
+                "launch": "November 5, 2013",
+                "arrival": "September 24, 2014",
+                "landing": "N/A",
+                "end": "October 2022",
+                "description": "Also known as Mangalyaan, this mission made India the first Asian nation to reach Mars orbit and the first country in the world to do so successfully on its first attempt. The spacecraft studied methane in the Martian atmosphere, surface morphology, and mineral composition. It was also widely recognized for its cost-effectiveness compared to other Mars missions.",
+                "destination": "Mars (Martian orbit)"
+            },
+            "Chandrayaan-3": {
+                "image": "images/missions/chandrayaan-3.webp",
+                "purpose": "To achieve a successful soft landing on the Moon and conduct in-situ scientific experiments.",
+                "launch": "July 14, 2023",
+                "arrival": "August 23, 2023",
+                "landing": "August 23, 2023",
+                "end": "September 2023",
+                "description": "Chandrayaan-3 followed the partial failure of Chandrayaan-2's lander. In August 2023, ISRO successfully landed the Vikram lander near the Moon's south pole - making India the first country to land in that region. The Pragyan rover conducted experiments analyzing lunar soil composition and surface temperature.",
+                "destination": "Moon (Lunar surface near the south pole)"
+            }
+        },
+        "roscosmos": {
+            "Luna 2": {
+                "image": "images/missions/luna-2.webp",
+                "purpose": "To achieve the first human-made impact on the Moon and gather data during transit.",
+                "launch": "September 12, 1959",
+                "arrival": "September 14, 1959",
+                "landing": "September 14, 1959 (impact)",
+                "end": "September 14, 1959",
+                "description": "Luna 2 was the first spacecraft to reach the surface of the Moon. Launched by the Soviet Union, it intentionally impacted the lunar surface near Mare Imbrium. The mission confirmed that the Moon had no significant magnetic field and marked the first successful delivery of a human-made object to another celestial body.",
+                "destination": "Moon (Impact near Mare Imbrium)"
+            },
+            "Venera 7": {
+                "image": "images/missions/venera-7.webp",
+                "purpose": "To perform the first successful soft landing on Venus and transmit data from its surface.",
+                "launch": "August 17, 1970",
+                "arrival": "December 15, 1970",
+                "landing": "December 15, 1970",
+                "end": "December 15, 1970",
+                "description": "Venera 7 became the first spacecraft to transmit data from the surface of another planet. After surviving extreme atmospheric entry conditions, it landed on Venus and transmitted temperature data for approximately 23 minutes. The mission confirmed the harsh surface conditions of Venus, including temperatures around 475°C.",
+                "destination": "Venus (Surface landing)"
+            },
+            "Luna 24": {
+                "image": "images/missions/luna-24.webp",
+                "purpose": "To collect and return lunar soil samples to Earth.",
+                "launch": "August 9, 1976",
+                "arrival": "August 18, 1976",
+                "landing": "August 18, 1976",
+                "end": "August 22, 1976",
+                "description": "Luna 24 was the final mission of the Soviet Luna program and successfully returned lunar soil samples to Earth. The spacecraft landed in Mare Crisium, drilled into the surface, and returned approximately 170 grams of lunar material. It was the last lunar sample-return mission until China's Chang'e 5 in 2020.",
+                "destination": "Moon (Mare Crisium sample return)"
+            }
+        },
+        "jaxa": {
+            "Hayabusa": {
+                "image": "images/missions/hayabusa.webp",
+                "purpose": "To demonstrate asteroid sample-return technology and return samples from a near-Earth asteroid.",
+                "launch": "May 9, 2003",
+                "arrival": "September 12, 2005",
+                "landing": "November 19, 2005 (asteroid touchdown)",
+                "end": "June 13, 2010",
+                "description": "Hayabusa was Japan's first asteroid sample-return mission. It rendezvoused with asteroid Itokawa, performed multiple touchdowns, and successfully returned microscopic samples to Earth despite significant technical challenges. The mission demonstrated advanced ion propulsion and deep-space navigation capabilities.",
+                "destination": "Asteroid Itokawa (Sample return)"
+            },
+            "Kaguya (SELENE)": {
+                "image": "images/missions/kaguya-selene.webp",
+                "purpose": "To orbit the Moon and map its geology, gravity field, and surface composition in detail.",
+                "launch": "September 14, 2007",
+                "arrival": "October 3, 2007",
+                "landing": "June 10, 2009 (planned impact)",
+                "end": "June 10, 2009",
+                "description": "Kaguya (SELENE) was a major Japanese lunar orbiter that returned high-resolution mapping data and helped refine understanding of the Moon's gravity anomalies and geological history. The main orbiter was deliberately impacted on the lunar surface at end of mission.",
+                "destination": "Moon (Lunar orbit)"
+            },
+            "Nozomi": {
+                "image": "images/missions/nozomi.webp",
+                "purpose": "To study Mars' atmosphere, ionosphere, and interaction with the solar wind.",
+                "launch": "July 3, 1998",
+                "arrival": "December 14, 2003 (attempted)",
+                "landing": "N/A",
+                "end": "December 14, 2003",
+                "description": "Nozomi was Japan's first Mars mission. Due to a series of propulsion and power problems, it was unable to enter Mars orbit and instead performed a flyby, ending the mission.",
+                "destination": "Mars (Flyby; orbit insertion failed)"
+            }
+        },
+        "esa": {
+            "Rosetta": {
+                "image": "images/missions/rosetta.webp",
+                "purpose": "To study a comet up close and deploy a lander onto its surface.",
+                "launch": "March 2, 2004",
+                "arrival": "August 6, 2014",
+                "landing": "November 12, 2014 (Philae landing)",
+                "end": "September 30, 2016",
+                "description": "Rosetta became the first spacecraft to orbit a comet and deploy a lander onto its surface. The Philae lander touched down on Comet 67P/Churyumov-Gerasimenko, providing unprecedented data about comet composition and the early solar system.",
+                "destination": "Comet 67P/Churyumov-Gerasimenko"
+            },
+            "Giotto": {
+                "image": "images/missions/giotto.webp",
+                "purpose": "To closely observe a comet nucleus and study its composition and dust environment.",
+                "launch": "July 2, 1985",
+                "arrival": "March 13, 1986 (Halley flyby)",
+                "landing": "N/A",
+                "end": "July 23, 1992",
+                "description": "Giotto was ESA's pioneering comet mission. It made the first close-up observations of Halley's Comet nucleus in 1986, returning transformative imagery and data about comet composition and activity.",
+                "destination": "Halley's Comet (Flyby)"
+            },
+            "Gaia": {
+                "image": "images/missions/gaia.webp",
+                "purpose": "To create the most precise 3D map of the Milky Way galaxy.",
+                "launch": "December 19, 2013",
+                "arrival": "January 8, 2014 (L2 orbit)",
+                "landing": "N/A",
+                "end": "March 27, 2025",
+                "description": "Gaia measured positions, distances, and motions of billions of stars, enabling the most detailed map of the Milky Way ever produced. ESA ended spacecraft operations and placed it into a retirement orbit in 2025.",
+                "destination": "Sun-Earth L2 Lagrange Point"
+            }
+        },
+        "nasa": {
+            "Apollo 11": {
+                "image": "images/missions/apollo-11.webp",
+                "purpose": "To perform the first crewed lunar landing and return safely to Earth.",
+                "launch": "July 16, 1969",
+                "arrival": "July 19, 1969 (Lunar orbit)",
+                "landing": "July 20, 1969",
+                "end": "July 24, 1969",
+                "description": "Apollo 11 successfully landed astronauts Neil Armstrong and Buzz Aldrin on the Moon while Michael Collins remained in lunar orbit. Armstrong became the first human to walk on the Moon. The mission fulfilled President Kennedy's goal of landing a man on the Moon before the end of the 1960s.",
+                "destination": "Moon (Sea of Tranquility)"
+            },
+            "Galileo": {
+                "image": "images/missions/galileo.webp",
+                "purpose": "To orbit Jupiter and study the planet, its moons, rings, and magnetosphere.",
+                "launch": "October 18, 1989",
+                "arrival": "December 8, 1995 (Jupiter orbit insertion)",
+                "landing": "N/A",
+                "end": "September 21, 2003",
+                "description": "Galileo was the first NASA spacecraft to orbit Jupiter. It transformed understanding of the Jovian system, including evidence supporting subsurface oceans on moons such as Europa. The mission ended with a controlled entry into Jupiter's atmosphere.",
+                "destination": "Jupiter (Orbital mission)"
+            },
+            "Spirit Rover": {
+                "image": "images/missions/spirit-rover.webp",
+                "purpose": "To investigate Martian geology and past water activity.",
+                "launch": "June 10, 2003",
+                "arrival": "January 4, 2004",
+                "landing": "January 4, 2004",
+                "end": "May 25, 2011",
+                "description": "Spirit explored Mars far beyond its planned 90-sol mission, operating for years and providing major evidence about past watery environments. After becoming stuck and later falling silent in 2010, NASA ended recovery efforts in 2011.",
+                "destination": "Mars (Gusev Crater)"
+            }
+        },
+        "cnsa": {
+            "Shenzhou 5": {
+                "image": "images/missions/shenzhou-5.webp",
+                "purpose": "To conduct China's first crewed spaceflight and demonstrate human spaceflight capability.",
+                "launch": "October 15, 2003",
+                "arrival": "October 15, 2003 (Low Earth Orbit)",
+                "landing": "October 16, 2003",
+                "end": "October 16, 2003",
+                "description": "Shenzhou 5 carried astronaut Yang Liwei into orbit, making China the third country to independently send a human into space. The mission orbited Earth 14 times before safely returning, marking a major milestone in China's human spaceflight program.",
+                "destination": "Low Earth Orbit"
+            },
+            "Chang'e 3": {
+                "image": "images/missions/change-3.webp",
+                "purpose": "To achieve China's first soft landing on the Moon and deploy a rover.",
+                "launch": "December 1, 2013",
+                "arrival": "December 14, 2013",
+                "landing": "December 14, 2013",
+                "end": "2016 (rover operations)",
+                "description": "Chang'e 3 successfully soft-landed on the Moon and deployed the Yutu rover. It was the first soft lunar landing since 1976. The mission conducted surface observations, geological surveys, and astronomical observations from the lunar surface.",
+                "destination": "Moon (Mare Imbrium)"
+            },
+            "Chang'e 5": {
+                "image": "images/missions/change-5.webp",
+                "purpose": "To collect and return lunar soil samples to Earth.",
+                "launch": "November 23, 2020",
+                "arrival": "November 28, 2020 (Lunar orbit)",
+                "landing": "December 1, 2020",
+                "end": "December 16, 2020 (return capsule landing)",
+                "description": "Chang'e 5 completed China's first lunar sample return mission, collecting material from the Moon and returning it safely to Earth. It was the first lunar sample return since the 1970s and a major milestone for China's lunar exploration program.",
+                "destination": "Moon (Sample return; landing near Mons Rümker)"
+            }
+        },
+        "spacex": {
+            "Falcon 1 Flight 4": {
+                "image": "images/missions/falcon-1-flight-4.webp",
+                "purpose": "To demonstrate the first privately developed liquid-fueled rocket reaching orbit.",
+                "launch": "September 28, 2008",
+                "arrival": "September 28, 2008 (Low Earth Orbit)",
+                "landing": "N/A",
+                "end": "September 28, 2008",
+                "description": "Falcon 1 Flight 4 was the first successful orbital launch of a privately developed liquid-fueled rocket. After three prior failures, SpaceX achieved orbit with a dummy payload, marking a turning point for commercial spaceflight.",
+                "destination": "Low Earth Orbit"
+            },
+            "Dragon C2+": {
+                "image": "images/missions/dragon-c2-plus.webp",
+                "purpose": "To demonstrate cargo delivery and return capability to the International Space Station.",
+                "launch": "May 22, 2012",
+                "arrival": "May 25, 2012 (ISS rendezvous)",
+                "landing": "May 31, 2012 (Pacific Ocean splashdown)",
+                "end": "May 31, 2012",
+                "description": "Dragon C2+ was the first commercial spacecraft to dock with the International Space Station. The mission successfully delivered cargo to the ISS and safely returned materials to Earth, proving commercial resupply capabilities.",
+                "destination": "International Space Station (Low Earth Orbit)"
+            },
+            "Crew Demo-2": {
+                "image": "images/missions/crew-demo-2.webp",
+                "purpose": "To demonstrate crewed orbital flight capability and transport astronauts to the ISS.",
+                "launch": "May 30, 2020",
+                "arrival": "May 31, 2020 (ISS docking)",
+                "landing": "August 2, 2020 (Gulf of Mexico splashdown)",
+                "end": "August 2, 2020",
+                "description": "Crew Demo-2 marked the first crewed orbital flight launched from U.S. soil since 2011. Astronauts Robert Behnken and Douglas Hurley traveled aboard Crew Dragon to the ISS, validating SpaceX's human spaceflight system.",
+                "destination": "International Space Station (Low Earth Orbit)"
+            }
+        }
+    }
+}

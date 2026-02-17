@@ -5,15 +5,19 @@
         grid-template-areas: none;
         gap: 10px;
         padding: 0 15px;
+        min-height: 5rem;
+        height: min-content;
     }
 
     header h1 {
         grid-area: auto;
         font-size: 1.75rem;
+        margin-bottom: 10px;
     }
 
     nav {
         grid-area: auto;
+        display: grid;
     }
 
     .hamburger {
@@ -23,5 +27,11 @@
 
     nav ul {
         justify-content: space-around;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
