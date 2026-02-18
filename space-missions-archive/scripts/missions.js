@@ -5,7 +5,7 @@ const ORGS = ["isro", "roscosmos", "jaxa", "esa", "nasa", "spacex", "cnsa"];
 
 async function getMissions() {
     try {
-        const res = await fetch("/space-missions-archive/data/missions.json");
+        const res = await fetch("/wdd231/space-missions-archive/data/missions.json");
         if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
         return await res.json();
     } catch (err) {

@@ -7,7 +7,7 @@ const FEATURED_BTN = document.querySelector("#featuredButton");
 
 async function getMissions() {
     try {
-        const res = await fetch("/space-missions-archive/data/missions.json");
+        const res = await fetch("/wdd231/space-missions-archive/data/missions.json");
         if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
         return await res.json();
     } catch (err) {
@@ -53,7 +53,7 @@ function renderFeaturedMission(picked) {
 
     // Button goes to missions page (simple version)
     FEATURED_BTN.addEventListener("click", () => {
-        window.location.href = "/space-missions-archive/missions.html";
+        window.location.href = "/wdd231/space-missions-archive/missions.html";
     });
 }
 
