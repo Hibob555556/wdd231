@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media screen and (min-width: 815px) {
     header {
         grid-template-columns: 0.5fr minmax(0, 1fr) 0.5fr;
         grid-template-rows: auto;
@@ -30,8 +30,37 @@
     }
 
     footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
+    }
+
+    #missions {
+        text-align: center;
+        width: 100vh;
+    }
+
+    #missions>section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .wide-span h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #missions>section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .wide-span h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 }

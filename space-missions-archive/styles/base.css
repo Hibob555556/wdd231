@@ -58,6 +58,103 @@ section {
     font-weight: bold;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hero-img {
+    border-radius: 7.5px;
+    margin: 10px;
+
+}
+
+.hero-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    background-color: rgba(255, 191, 0, 0.74);
+    border-start-start-radius: 7.5px;
+    border-end-end-radius: 7.5px;
+    text-align: center;
+}
+
+.hero-content button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* --- Home layout --- */
+.home-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    align-items: start;
+}
+
+/* 1 column on mobile */
+.home-grid {
+    grid-template-columns: 1fr;
+}
+
+.featured-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.featured-card h2 {
+    margin-top: 0;
+}
+
+.featured-meta {
+    margin: 0.5rem 0 1rem;
+    opacity: 0.9;
+}
+
+.featured-description {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.featured-image-wrap {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    min-height: 260px;
+}
+
+#featuredButton {
+    background-color: var(--foreground-1);
+    color: var(--background-1);
+    padding: 2px;
+    border-radius: 7.5px;
+}
+
+@media (min-width: 38rem) {
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.video-link {
+    color: white;
+
+}
+
 /* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
 
 /* Color Scheme */
@@ -122,8 +219,9 @@ main {
     display: flex;
     flex-direction: column;
     width: min(900px, 100%);
-    margin: 0 auto;
     height: max-content;
+    justify-content: center;
+    justify-self: center;
 }
 
 .no-style-list {
@@ -205,11 +303,10 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
     padding: 0;
-    margin: 0;
+    margin: -2;
 }
 
 /* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
@@ -266,6 +363,11 @@ img {
 
 /* Footer Styles */
 /* -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ */
+.locked-footer {
+    position: absolute;
+    bottom: 0.25px;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
